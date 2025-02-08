@@ -1,0 +1,51 @@
+<html lang>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debugging Activity</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home<a/></li>  <!-- Error 1: Incorrect closing tag for <a> -->
+            <li><a href="about.html">About</li>  <!-- Error 2: Missing closing </a> tag -->
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h2>About Us</h2>
+        <p>Welcome to our website. We provide top-notch services in various fields.</p>
+    </section>
+
+    <section>
+        <h3>Our Services<h3>  <!-- Error 3: Incorrect closing tag (should be </h3>) -->
+        <ul>
+            <li>Web Development</li>
+            <li>Graphic Design</li>
+            <li>Digital Marketing</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email"> <!-- Error 4: Incorrect input type (should be "email") -->
+
+            <textarea placeholder="Enter your message here"></textarea>
+
+            <button>Send<button>  <!-- Error 5: Incorrect closing tag (should be </button>) -->
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2024 Debugging Activity</p>
+    </footer>
+</body>
+</html>

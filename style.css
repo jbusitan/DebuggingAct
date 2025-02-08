@@ -1,0 +1,53 @@
+/* styles.css */
+
+/* Error 1: Missing opening curly brace { after body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    overflow-x: hidden;
+} /* Fixed by adding opening and closing curly braces */
+
+/* Error 2: Incorrect selector "heade", should be "header" */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+}
+
+/* Error 3: Missing closing curly brace } for main section */
+main section {
+    margin: 20px;
+} /* Fixed by adding closing curly brace */
+
+/* Error 4: Missing semicolon after "bottom: 0" in footer */
+footer {
+    position: absolute;
+    bottom: 0; /* Fixed by adding semicolon */
+    right: 0;
+    width: 100vw;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+
+    /* Error 5: Incorrect "text-align center;" should be "text-align: center;" */
+    text-align: center; /* Fixed incorrect property */
+} /* Fixed missing closing curly brace for footer */
